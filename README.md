@@ -1,0 +1,1 @@
+# DevOps-Project-Kubernetes-AutoScale-Karpenter-HPA-VPA
