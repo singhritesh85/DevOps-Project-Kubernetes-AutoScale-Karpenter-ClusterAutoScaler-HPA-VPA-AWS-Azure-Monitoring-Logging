@@ -24,7 +24,7 @@ spec:
           values: ["t"]   # Interested to launch t series instance           #["c", "m", "r"] 
         - key: karpenter.k8s.aws/instance-generation
           operator: Gt
-          values: ["2"]   # Instances launched will be greated than 2
+          values: ["1"]   # Instances launched will be greated than 1    ###["2"]   # Instances launched will be greated than 2
       nodeClassRef:
         group: karpenter.k8s.aws
         kind: EC2NodeClass
