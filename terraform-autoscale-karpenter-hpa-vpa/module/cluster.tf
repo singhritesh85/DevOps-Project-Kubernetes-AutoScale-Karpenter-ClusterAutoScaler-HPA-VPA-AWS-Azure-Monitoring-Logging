@@ -602,6 +602,8 @@ resource "aws_eks_addon" "amazon_cloudwatch_observability" {
     service_account = "cloudwatch-agent"
   }
   resolve_conflicts_on_update = "OVERWRITE"
+
+  depends_on = [aws_eks_cluster.eksdemo, aws_eks_node_group.eksnode]
 }
 
 ################################### Metrics Server Add-Ons ############################################
